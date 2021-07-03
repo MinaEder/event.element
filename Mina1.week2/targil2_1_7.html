@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+      
+<div id="display"></div> 
+<button id="getTime"></button>
+ <button onclick="currentSecond()" style="border-style:solid;border-width: 10px;"></button>
+ 
+
+
+
+
+
+    <script>
+
+    
+
+        //אורך הסטרינג בעזרת משתנה מקס ששוה ל 10
+        //כלומר אורך האייטמים במערך שלי הוא 10 פריטים
+        let max = "..........".length;
+
+        //מגדירה שאינדקס שלי שווה ל נקודה הראשונה במערך כלומר 1
+        //אם לא הייתי מגדירה המערך שלי היה מתחיל לספור מ 0
+        //אחרי האורך, אני מגדירה שהאינדקס שלי קטן  שווה למקס*מקס כלומר 100=10*10
+        //דבק אחרון בדיקה בקונסול לוג
+
+
+        for (let i = ".".length; i <= (max * max); i++) {
+            console.log(i);
+
+         function currentSecond() {
+            display.innerHTML+=`<button${getTime}</button>`
+           / console.log(today.getSeconds())
+
+        }
+        setInterval(currentSecond,1000);
+        let today
+        function getTime() {
+            today= new Date()
+            return today.getSeconds();}
+        
+              
+         
+     
+           
+        
+    
+    
+        </script>
+ 
+    
+    </script>
+</body>
+
+</html>
