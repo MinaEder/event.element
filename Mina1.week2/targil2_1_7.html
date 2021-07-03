@@ -9,19 +9,12 @@
 </head>
 
 <body>
-      
-<div id="display"></div> 
-<button id="getTime"></button>
- <button onclick="currentSecond()" style="border-style:solid;border-width: 10px;"></button>
- 
 
+    <div>
 
-
-
-
+    <input type="button" value="getTime" onclick="setInterval('currentSecond()', 1000)" />
+</div>
     <script>
-
-    
 
         //אורך הסטרינג בעזרת משתנה מקס ששוה ל 10
         //כלומר אורך האייטמים במערך שלי הוא 10 פריטים
@@ -32,32 +25,18 @@
         //אחרי האורך, אני מגדירה שהאינדקס שלי קטן  שווה למקס*מקס כלומר 100=10*10
         //דבק אחרון בדיקה בקונסול לוג
 
-
         for (let i = ".".length; i <= (max * max); i++) {
             console.log(i);
+        }
+        function currentSecond() {
+            console.log(event.target.currentSecond)
 
-         function currentSecond() {
-            display.innerHTML+=`<button${getTime}</button>`
-           / console.log(today.getSeconds())
 
         }
-        setInterval(currentSecond,1000);
-        let today
-        function getTime() {
-            today= new Date()
-            return today.getSeconds();}
-        
-              
-         
-     
-           
-        
-    
-    
-        </script>
- 
-    
+
+
     </script>
 </body>
+
 
 </html>
